@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hatch</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">hatch</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link">shop</a></li>
+                    <li class="nav-item"><a href="#newsletter" class="nav-link">subscribe</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">delivery</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close"><i class='bx bx-x'></i></div>
+                <a href="#" class="button btn-cta">Login</a>
+                <div class="nav__dark">
+                    <i class='bx bx-search change-theme'></i>
+                    <i class='bx bx-user change-theme'></i>
+                    <i class='bx bx-cart-alt change-theme'></i>
+                    <span class="change-theme-name">$25.00</span> &#124;
+                    <a href="#" class="button button-header">Login</a>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle"><i class='bx bx-grid-alt'></i></div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home-container container">
+                <div class="home-data">
+                    <h1 class="home-title">Cold brew</h1>
+                    <h1 class="home-title home-second">Coffee</h1>
+                    <p class="home-desc">
+                        Hatch is a coffee roastery in Toronto that produces
+                        ready-to-drink cold brew coffee. Using only high quality,
+                        natural ingredients, and a unique, craft-oriented manufacturing
+                        process.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#about" class="button home-btn1">Add to cart</a>
+                        <a href="#" class="button home-btn2">View Detail</a>
+                    </div>
+                </div>
+                <div class="home-images">
+                    <div class="home-image">
+                        <img src="./assets/images/home.jpg" alt="HATCH COLD BREW COFFEE" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="services-container container">
+                <h3 class="services-title has-before">Benefits to Using Our Services</h3>
+                <ul class="services-list grid">
+                    <li>
+                        <div class="listing-card">
+                            <div class="card-icon">
+                                <img src="./assets/images/icon1.png" width="71" height="71" loading="lazy" alt="icon">
+                            </div>
+                            <div>
+                                <h3 class="service-list-title">Best Quality</h3>
+                                <p class="service-list-desc">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listing-card">
+                            <div class="card-icon">
+                                <img src="./assets/images/icon2.png" width="71" height="71" loading="lazy" alt="icon">
+                            </div>
+                            <div>
+                                <h3 class="service-list-title">Free Shipping</h3>
+                                <p class="service-list-desc">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listing-card">
+                            <div class="card-icon">
+                                <img src="./assets/images/icon3.png" width="71" height="71" loading="lazy" alt="icon">
+                            </div>
+                            <div>
+                                <h3 class="service-list-title">Warranty</h3>
+                                <p class="service-list-desc">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="product section" id="product">
+            <div class="product-container container">
+                <div class="product-heading">
+                    <h2 class="product-heading-title">Shop</h2>
+                    <ul class="filter-btn-list">
+                        <li class="filter-btn-item"><button class="filter-btn active" data-filter-btn="all">All
+                                Products</button></li>
+                        <li class="filter-btn-item"><button class="filter-btn"
+                                data-filter-btn="espresso">Espresso</button></li>
+                        <li class="filter-btn-item"><button class="filter-btn"
+                                data-filter-btn="premium">Premium</button></li>
+                        <li class="filter-btn-item"><button class="filter-btn" data-filter-btn="origin">Origin</button>
+                        </li>
+                        <li class="filter-btn-item"><button class="filter-btn"
+                                data-filter-btn="concentrate">Concentrate</button></li>
+                    </ul>
+                </div>
+                <ul class="grid-list product-list" data-filter="all">
+                    <li class="espresso">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img1.jpg" width="300" height="300" alt="Blackout"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">FOUNDATION</p>
+                                <h4 class="card-title">Blackout</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="origin">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img4.jpg" width="300" height="300" alt="El Paraiso Decaf"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">DECAF</p>
+                                <h4 class="card-title">El Paraiso Decaf</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="premium">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img9.jpg" width="300" height="300" alt="El Paraiso Daniel"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">PREMIUM</p>
+                                <h4 class="card-title">El Paraiso Daniel</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="espresso">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img3.jpg" width="300" height="300" alt="Supernova"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">FOUNDATION</p>
+                                <h4 class="card-title">Supernova</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="origin">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img5.jpg" width="300" height="300" alt="Daterra Farms"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">SEASONAL</p>
+                                <h4 class="card-title">Modor Shantawene</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="premium">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img8.jpg" width="300" height="300" alt="Hayissa Olocho Keramo"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">PREMIUM</p>
+                                <h4 class="card-title">Hayissa Olocho Keramo</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="espresso">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img2.jpg" width="300" height="300" alt="Gamma"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">FOUNDATION</p>
+                                <h4 class="card-title">Gamma</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="origin">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img7.jpg" width="300" height="300"
+                                    alt="Finca Jurutungo Natural" class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">PREMIUM</p>
+                                <h4 class="card-title">Finca Jurutungo Natural</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="premium">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img6.jpg" width="300" height="300" alt="El Paraiso Lychee"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">PREMIUM</p>
+                                <h4 class="card-title">El Paraiso Lychee</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="concentrate">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img10.jpg" width="300" height="300" alt="Chelbessa"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">CONCENTRATE</p>
+                                <h4 class="card-title">Chelbessa</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="concentrate">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img11.jpg" width="300" height="300" alt="Ponteco"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">CONCENTRATE</p>
+                                <h4 class="card-title">Ponteco</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="concentrate">
+                        <div class="product-card">
+                            <a href="#" class="card-banner img-holder" style="--width: 300; --height: 300;">
+                                <img src="./assets/images/img12.jpg" width="300" height="300" alt="Tres Rayas"
+                                    class="img-cover">
+                            </a>
+                            <div class="card-content">
+                                <p class="card-desc">CONCENTRATE</p>
+                                <h4 class="card-title">Tres Rayas</h4>
+                                <div class="card-price">
+                                    <data class="price" value="10">$10.00 CAD</data>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="newsletter section" id="newsletter">
+            <div class="newsletter-container container grid">
+                <div>
+                    <h2 class="newsletter-title">Subscribe to <strong class="strong">Our Newsletter</strong></h2>
+                    <p class="newsletter-desc">
+                        Don't miss out on your discounts. Subscribe to our email
+                        newsletter to get the best offers, discounts, coupons,
+                        gifts and much more.
+                    </p>
+                </div>
+                <form action="" class="newsletter-form">
+                    <input type="email" name="email_address" placeholder="Your email address" required
+                        class="email-field">
+                    <button type="submit" class="button newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="accordion section" id="accordion">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion-container container grid">
+                <div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">What is your roasting style?</h3>
+                        <div class="accordion-body">
+                            <p class="accordion-desc">
+                                Our roasting style is heavily influenced by Scandinavian style light roasts.
+                                This allows us to showcase the flavour nuances of the coffee origin.
+                                Coffee is a fruit, and we try our best to bring out the fruit notes in each cup.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">What is your roasting style?</h3>
+                        <div class="accordion-body">
+                            <p class="accordion-desc">
+                                Our roasting style is heavily influenced by Scandinavian style light roasts.
+                                This allows us to showcase the flavour nuances of the coffee origin.
+                                Coffee is a fruit, and we try our best to bring out the fruit notes in each cup.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">What is your roasting style?</h3>
+                        <div class="accordion-body">
+                            <p class="accordion-desc">
+                                Our roasting style is heavily influenced by Scandinavian style light roasts.
+                                This allows us to showcase the flavour nuances of the coffee origin.
+                                Coffee is a fruit, and we try our best to bring out the fruit notes in each cup.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">What is your roasting style?</h3>
+                        <div class="accordion-body">
+                            <p class="accordion-desc">
+                                Our roasting style is heavily influenced by Scandinavian style light roasts.
+                                This allows us to showcase the flavour nuances of the coffee origin.
+                                Coffee is a fruit, and we try our best to bring out the fruit notes in each cup.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sponsors section">
+            <div class="sponsors-container container grid">
+                <div class="sponsors-img">
+                    <img src="./assets/images/logo1.png" alt="amazon awt logo">
+                </div>
+                <div class="sponsors-img">
+                    <img src="./assets/images/logo2.png" alt="ebay logo">
+                </div>
+                <div class="sponsors-img">
+                    <img src="./assets/images/logo3.png" alt="hello fresh logo">
+                </div>
+                <div class="sponsors-img">
+                    <img src="./assets/images/logo4.png" alt="starbucks logo">
+                </div>
+                <div class="sponsors-img">
+                    <img src="./assets/images/logo5.png" alt="coffee cup logo">
+                </div>
+                <div class="sponsors-img">
+                    <img src="./assets/images/logo6.png" alt="apple pay logo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <div class="footer-content">
+                <h3 class="footer-title">hatch</h3>
+                <p class="footer-desc">High quality artisanally roasted coffee.</p>
+                <ul class="footer-social">
+                    <a href="" target="_blank" class="footer-social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="" target="_blank" class="footer-social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="" target="_blank" class="footer-social-link"><i class='bx bxl-instagram'></i></a>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Services</a></li>
+                    <li><a href="#product" class="footer-link">Shop</a></li>
+                    <li><a href="#newsletter" class="footer-link">Subscribe</a></li>
+                    <li><a href="#" class="footer-link">Delivery</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="footer-title">Info</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Customer Support</a></li>
+                    <li><a href="#" class="footer-link">Support Center</a></li>
+                    <li><a href="#" class="footer-link">News</a></li>
+                    <li><a href="#accordion" class="footer-link">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-list">
+                    <li>example@gmail.com</li>
+                    <li>Toronto, Canada</li>
+                    <li class="number">+1-613-555-0115</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&#169; 2022 hatch. All rights reserved &#124; by <a href="" target="_blank"
+                class="rights-link">Madhushani</a></p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
